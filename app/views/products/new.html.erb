@@ -1,0 +1,23 @@
+<%= form_with scope: :products, url: products_path, local: true do |form| %>
+    <p>
+      <%= form.label :title %><br>
+      <%= form.text_field :title %>
+    </p>
+   
+
+    <p>
+        <%= form.label :price %><br>
+        <%= form.text_field :price %>
+    </p>
+
+    <p>
+        <%= form.label :inventory_count %><br>
+        <%= form.text_field :inventory_count %>
+    </p>
+
+    <p>
+      <%= form.submit %>
+    </p>
+
+  <% end %>
+  <%= link_to 'Back', products_path %>
