@@ -1,0 +1,17 @@
+<h1>Shopify Cart</h1>
+
+<table>
+  <tr>
+    <th>Product Name</th>
+    <th>Product Price</th>
+  </tr>
+
+  <% @purchaseList.each do |purchasedproduct| %>
+    <tr>
+      <td><%= purchasedproduct.read_attribute(:p_title) %> </td>
+      <td><%= purchasedproduct.read_attribute(:p_price) %> </td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Back To List', products_path %>

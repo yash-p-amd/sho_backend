@@ -5,7 +5,19 @@ class ProductsController < ApplicationController
     end
 
     def index
+
+       #@products = Product.where( :conditions => ["inventory_count = 0", params[:products]]  )
+       #@products = Product.where("inventory_count > 0", params[:products]  )
+       @return_Empty_Inventory=params[:return_Empty_Inventory]
+
+
+
+       if (@return_Empty_Inventory === 'true') 
         @products = Product.all
+       else
+        @products = Product.where("inventory_count > 0", params[:products]  )
+       end
+
     end
 
     def create
@@ -22,5 +34,5 @@ class ProductsController < ApplicationController
 private
     def product_params
         params.require(:products).permit(:title, :price, :inventory_count)
-    end
+    end 
 end
