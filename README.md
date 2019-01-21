@@ -17,6 +17,12 @@
   * http://localhost:3000/products
   
 * Show Product Description
-  * http://localhost:3000/products/1 **( 1 is product_id)**
+  * http://localhost:3000/products/1 **(1 is product_id | it has to be product id)**
+  
+* Add Product to Cart
+  * http://localhost:3000/purchases/new?product_id=1 **(1 is product_id | it has to be product id)**
+  
+* Show Shopify Shopping Cart and Products in Cart
+  * http://localhost:3000/purchases
 
 
