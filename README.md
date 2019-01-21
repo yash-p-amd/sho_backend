@@ -37,3 +37,6 @@
 * Check out Cart
   * http://localhost:3000/purchases/check_out
 
+Here's what it looks like in action. ( Wait for GIF )
+
+![Alt Text](https://github.com/YASH12366/WOZ/blob/master/WOZDemo.gif)
