@@ -6,11 +6,7 @@ class ProductsController < ApplicationController
 
     def index
 
-       #@products = Product.where( :conditions => ["inventory_count = 0", params[:products]]  )
-       #@products = Product.where("inventory_count > 0", params[:products]  )
        @return_Empty_Inventory=params[:return_Empty_Inventory]
-
-
 
        if (@return_Empty_Inventory === 'true') 
         @products = Product.all
@@ -25,7 +21,6 @@ class ProductsController < ApplicationController
         @products.save
         redirect_to @products
     end
-
 
     def show
         @products = Product.find(params[:id])
