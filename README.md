@@ -39,4 +39,4 @@
 
 Here's what it looks like in action. ( Wait for GIF )
 
-![Alt Text](https://github.com/YASH12366/WOZ/blob/master/WOZDemo.gif)
+![Alt Text](https://github.com/YASH12366/sho_backend/blob/master/Showcase/ShopifyDemo.gif)
