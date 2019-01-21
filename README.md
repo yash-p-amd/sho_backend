@@ -25,4 +25,6 @@
 * Show Shopify Shopping Cart and Products in Cart
   * http://localhost:3000/purchases
 
+* Check out Cart
+  * http://localhost:3000/purchases/check_out
 
