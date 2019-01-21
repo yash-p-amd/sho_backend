@@ -4,6 +4,14 @@
 ## Getting Started
 * ruby bin\rails server
 
+- [x] API can server one product at a time or all products at same time
+- [x] Every product has a title, price, and inventory_count
+- [x] Supports a passing argument to fetch products either with an empty inventory or not empty inventory.
+- [x] Products with no inventory cannot be purchased
+- [x] It supports context of a simple shopping cart
+- [x] Cart calculates total amount of products
+- [x] Inventory only reduces after cart check out
+
 ### API end points
 
 * Add New Product
