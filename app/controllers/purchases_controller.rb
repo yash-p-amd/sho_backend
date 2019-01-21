@@ -3,7 +3,7 @@ class PurchasesController < ApplicationController
 def index
 
     @purchaseList = Purchase.joins(:product).select("purchases.*, products.title as p_title, products.price as p_price")
-
+    
 end
 
 def check_out
@@ -25,9 +25,7 @@ def check_out
     @finalTotalPrice = @finalTotalPrice + cartPro.p_price
 
   end
-  
-  logger.info @finalTotalPrice
-
+  Purchase.delete_all
 end
 
 

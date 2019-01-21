@@ -6,6 +6,7 @@ class ProductsController < ApplicationController
 
     def index
 
+
        @return_Empty_Inventory=params[:return_Empty_Inventory]
 
        if (@return_Empty_Inventory === 'true') 
