@@ -5,7 +5,7 @@
 * ruby bin\rails server
 
 ## Completed Challenge
-- [x] API can server one product at a time or all products at same time
+- [x] API can serve one product at a time or all products at same time
 - [x] Every product has a title, price, and inventory_count
 - [x] Supports a passing argument to fetch products either with an empty inventory or not empty inventory.
 - [x] Products with no inventory cannot be purchased
